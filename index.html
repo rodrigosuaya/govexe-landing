@@ -191,8 +191,8 @@
     margin-bottom: 18px;
   }
   .mech h3 { margin-bottom: 10px; }
-  .mech p { color: var(--ink-soft); margin: 0; font-size: 15px; line-height: 1.55; }
-  .mech .meta { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
+  .mech p { color: var(--ink-soft); margin: 0; font-size: 15px; line-height: 1.55; flex: 1; }
+  .mech .meta { margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
 
   /* ===================== MARKET BLOCK ====================== */
   .market-list {
@@ -299,8 +299,8 @@
     <div class="nav-links">
       <a href="#what">What it is</a>
       <a href="#how">How it works</a>
-      <a href="#cardano">For Cardano</a>
       <a href="#opportunity">Opportunity</a>
+      <a href="#cardano">For Cardano</a>
       <a href="#pilot">The pilot</a>
       <a href="#team">The team</a>
       <a href="#ask">The ask</a>
@@ -326,7 +326,7 @@
     <div class="hero-stats">
       <div class="stat">
         <div class="k">Funding ask · ADA/USD 0.25</div>
-        <div class="v">2,335,400 ADA <span class="small muted">≈ $583,850</span><br><span class="small">+ 583,850 ADA contingency <span style="opacity:.7">≈ $145,963</span></span></div>
+        <div class="v">2,335,400 ADA <span class="small muted">≈ $583,850</span><br><span class="small">+ 583,850 ADA contingency</span></div>
       </div>
       <div class="stat">
         <div class="k">Duration</div>
@@ -348,14 +348,14 @@
      WHAT IT IS
 ========================================================= -->
 <section class="section" id="what">
-  <div class="wrap twocol">
-    <div>
-      <span class="eyebrow">What it is</span>
+  <div class="wrap">
+    <span class="eyebrow">What it is</span>
+    <div class="twocol">
       <h2 class="text-balance">GOV.EXE brings a public project's full lifecycle into one verifiable workflow.</h2>
-    </div>
-    <div class="col-body">
-      <p>Officials executing public projects operate across disconnected systems for planning, procurement, and payment. No single authority sees a project's full lifecycle, producing delays, coordination failures, and accountability gaps.</p>
-      <p>GOV.EXE sits above the government's existing systems and helps officials move public projects through the five stages where decisions are actually made — <strong>Mandate, Planning, Procurement, Payment, and Closure</strong> — with each authorized step recorded and enforced on Cardano.</p>
+      <div class="col-body">
+        <p>Officials executing public projects operate across disconnected systems for planning, procurement, and payment. No single authority sees a project's full lifecycle, producing delays, coordination failures, and accountability gaps.</p>
+        <p>GOV.EXE sits above the government's existing systems and helps officials move public projects through the five stages where decisions are actually made — <strong>Mandate, Planning, Procurement, Payment, and Closure</strong> — with each authorized step recorded and enforced on Cardano.</p>
+      </div>
     </div>
   </div>
 
@@ -427,17 +427,17 @@
      HOW IT WORKS
 ========================================================= -->
 <section class="section" id="how">
-  <div class="wrap twocol">
-    <div>
-      <span class="eyebrow">How it works</span>
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <div class="twocol">
       <h2 class="text-balance">Three layers, working together.</h2>
-    </div>
-    <div class="col-body">
-      <p>As per the <a href="https://github.com/txpipe/gov.exe" target="_blank" rel="noopener">preliminary design</a>, an AI agent does the work between steps: reading supporting documents from the government's existing systems, checking that the conditions for the next step are met, and preparing the action for the responsible official to authorize.</p>
-      <p>Officials interact with the agent through tools they already use day-to-day — Slack or Microsoft Teams. A thin Signing Portal brokers the institution's signing flow so the agent never holds authority keys. Cardano records and enforces each authorized step, producing an audit trail no single institution can rewrite.</p>
-      <div class="callout">
-        <div class="label">Design principle</div>
-        <p>Cardano is the verifier, not the executor. Authority always remains with the official; the chain enforces that authorization happened and that the sequence is preserved.</p>
+      <div class="col-body">
+        <p>As per the <a href="https://github.com/txpipe/gov.exe" target="_blank" rel="noopener">preliminary design</a>, an AI agent does the work between steps: reading supporting documents from the government's existing systems, checking that the conditions for the next step are met, and preparing the action for the responsible official to authorize.</p>
+        <p>Officials interact with the agent through tools they already use day-to-day — Slack or Microsoft Teams. A thin Signing Portal brokers the institution's signing flow so the agent never holds authority keys. Cardano records and enforces each authorized step, producing an audit trail no single institution can rewrite.</p>
+        <div class="callout">
+          <div class="label">Design principle</div>
+          <p>Cardano is the verifier, not the executor. Authority always remains with the official; the chain enforces that authorization happened and that the sequence is preserved.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -545,56 +545,17 @@
 </section>
 
 <!-- =========================================================
-     WHY CARDANO
-========================================================= -->
-<section class="section" id="cardano">
-  <div class="wrap">
-    <div class="twocol">
-      <div>
-        <span class="eyebrow">For Cardano</span>
-        <h2 class="text-balance">Three concrete mechanisms <strong>that</strong> create value beyond the pilot</h2>
-      </div>
-      <div class="col-body">
-        <p>The pilot is one deployment in one province. What the Cardano ecosystem gets from it is structured to outlast it: a Secretariat-endorsed case study, an open-source framework with builder working groups, and a documented LATAM market signal from gf Consulting Group's institutional network.</p>
-        <p class="muted small">The pilot tests whether this public-sector vertical can scale on Cardano through builder uptake, jurisdiction interest, and measurable ROI.</p>
-      </div>
-    </div>
-
-    <div class="mech-grid">
-      <div class="mech">
-        <span class="num">1</span>
-        <h3>Case study — Institutionally endorsed</h3>
-        <p>A real institutional deployment, endorsed by the Secretariat of Modernization of Entre Ríos. Cardano builders pursuing similar verticals use it as a credibility lever with their own institutional counterparts.</p>
-        <div class="meta">Endorsed · published in the open-source repo</div>
-      </div>
-      <div class="mech">
-        <span class="num">2</span>
-        <h3>Open-source framework + working groups</h3>
-        <p>Apache 2.0 codebase at the TxPipe org. Two working-group sessions walk Cardano builders through the architecture, integration pattern, and deployment considerations — turning a GitHub artifact into an actively-supported toolkit.</p>
-        <div class="meta">2 working-group sessions delivered</div>
-      </div>
-      <div class="mech">
-        <span class="num">3</span>
-        <h3>LATAM prospecting learnings</h3>
-        <p>Four briefings to jurisdictions and multilateral institutions in gf's LATAM network. An aggregated lessons-learned document captures what LATAM jurisdictions are buying, what they consider blocking, and what they're hearing from peers.</p>
-        <div class="meta">4 briefings · aggregated lessons published</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================
-     MARKET
+     OPPORTUNITY
 ========================================================= -->
 <section class="section" id="opportunity">
-  <div class="wrap twocol">
-    <div>
-      <span class="eyebrow">Opportunity</span>
+  <div class="wrap">
+    <span class="eyebrow">Opportunity</span>
+    <div class="twocol">
       <h2 class="text-balance">The category is named, measured, and funded at multilateral scale.</h2>
-    </div>
-    <div class="col-body">
-      <p>Digital government — and public-project execution within it — is a recognized priority at the World Bank, OECD, IDB, UNDP, and OGP. Programs, benchmarks, and active loans are public and current.</p>
-      <p class="muted small">Argentina is an active participant: the World Bank's Argentina project directly funds Compr.AR, Contrat.AR, digital signatures, and digital civil registries — the same execution layer GOV.EXE operates in.</p>
+      <div class="col-body">
+        <p>Digital government — and public-project execution within it — is a recognized priority at the World Bank, OECD, IDB, UNDP, and OGP. Programs, benchmarks, and active loans are public and current.</p>
+        <p class="muted small">Argentina is an active participant: the World Bank's Argentina project directly funds Compr.AR, Contrat.AR, digital signatures, and digital civil registries — the same execution layer GOV.EXE operates in.</p>
+      </div>
     </div>
   </div>
 
@@ -629,18 +590,55 @@
 </section>
 
 <!-- =========================================================
+     FOR CARDANO
+========================================================= -->
+<section class="section" id="cardano">
+  <div class="wrap">
+    <span class="eyebrow">For Cardano</span>
+    <div class="twocol">
+      <h2 class="text-balance">Three concrete mechanisms that create value beyond the pilot.</h2>
+      <div class="col-body">
+        <p>The pilot is one deployment in one province. What the Cardano ecosystem gets from it is structured to outlast it: a Secretariat-endorsed case study, an open-source framework with builder working groups, and a documented LATAM market signal from gf Consulting Group's institutional network.</p>
+        <p class="muted small">The pilot tests whether this public-sector vertical can scale on Cardano through builder uptake, jurisdiction interest, and measurable ROI.</p>
+      </div>
+    </div>
+
+    <div class="mech-grid">
+      <div class="mech">
+        <span class="num">1</span>
+        <h3>Case study — Institutionally endorsed</h3>
+        <p>A real institutional deployment, endorsed by the Secretariat of Modernization of Entre Ríos. Cardano builders pursuing similar verticals use it as a credibility lever with their own institutional counterparts.</p>
+        <div class="meta">Endorsed · published in the open-source repo</div>
+      </div>
+      <div class="mech">
+        <span class="num">2</span>
+        <h3>Open-source framework + working groups</h3>
+        <p>Apache 2.0 codebase at the TxPipe org. Two working-group sessions walk Cardano builders through the architecture, integration pattern, and deployment considerations — turning a GitHub artifact into an actively-supported toolkit.</p>
+        <div class="meta">2 working-group sessions delivered</div>
+      </div>
+      <div class="mech">
+        <span class="num">3</span>
+        <h3>LATAM prospecting learnings</h3>
+        <p>Four briefings to jurisdictions and multilateral institutions in gf's LATAM network. An aggregated lessons-learned document captures what LATAM jurisdictions are buying, what they consider blocking, and what they're hearing from peers.</p>
+        <div class="meta">4 briefings · aggregated lessons published</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
      PILOT PLAN
 ========================================================= -->
 <section class="section" id="pilot">
-  <div class="wrap twocol">
-    <div>
-      <span class="eyebrow">The pilot</span>
+  <div class="wrap">
+    <span class="eyebrow">The pilot</span>
+    <div class="twocol">
       <h2 class="text-balance">9 months. 3 work packages. 6 milestones.</h2>
-    </div>
-    <div class="col-body">
-      <p><strong>WP1 — Design & Specification.</strong> Map Entre Ríos's real workflows onto the five-stage execution model and refine the preliminary architecture into a buildable specification.</p>
-      <p><strong>WP2 — Platform Development.</strong> Build the platform per spec, integrate with the province's systems, onboard officials, and complete an independent smart-contract audit.</p>
-      <p><strong>WP3 — Pilot Operations & Replication.</strong> Run the platform in production on active workflows. Publish the case study, replication framework, working-group sessions, and lessons-learned from prospecting.</p>
+      <div class="col-body">
+        <p><strong>WP1 — Design & Specification.</strong> Map Entre Ríos's real workflows onto the five-stage execution model and refine the preliminary architecture into a buildable specification.</p>
+        <p><strong>WP2 — Platform Development.</strong> Build the platform per spec, integrate with the province's systems, onboard officials, and complete an independent smart-contract audit.</p>
+        <p><strong>WP3 — Pilot Operations & Replication.</strong> Run the platform in production on active workflows. Publish the case study, replication framework, working-group sessions, and lessons-learned from prospecting.</p>
+      </div>
     </div>
   </div>
 
@@ -649,120 +647,100 @@
   <!-- ================================================ -->
   <div class="wrap">
     <div class="diagram-card">
-      <svg viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline of six milestones across nine months">
+      <svg viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline of six milestones across nine months">
         <g font-family="Inter, sans-serif">
           <!-- WP bands -->
           <g>
             <rect x="20" y="20" width="200" height="22" rx="4" ry="4" fill="#E8EEF6"/>
             <text x="120" y="35" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D" letter-spacing="0.06em">WP1 · DESIGN &amp; SPEC</text>
-
             <rect x="232" y="20" width="333" height="22" rx="4" ry="4" fill="#E8EEF6"/>
             <text x="398" y="35" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D" letter-spacing="0.06em">WP2 · DEVELOPMENT</text>
-
             <rect x="577" y="20" width="400" height="22" rx="4" ry="4" fill="#E8EEF6"/>
             <text x="777" y="35" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D" letter-spacing="0.06em">WP3 · PILOT &amp; REPLICATION</text>
           </g>
 
-          <!-- timeline rail -->
-          <line x1="20" y1="120" x2="980" y2="120" stroke="#C9C5B8" stroke-width="1.5"/>
+          <!-- timeline rail — lowered to create visual gap from milestone boxes -->
+          <line x1="20" y1="142" x2="980" y2="142" stroke="#C9C5B8" stroke-width="1.5"/>
 
-          <!-- month ticks (9 months) -->
+          <!-- month boundary ticks (10 marks) -->
+          <g stroke="#C9C5B8" stroke-width="1">
+            <line x1="20"  y1="138" x2="20"  y2="146"/>
+            <line x1="127" y1="138" x2="127" y2="146"/>
+            <line x1="233" y1="138" x2="233" y2="146"/>
+            <line x1="340" y1="138" x2="340" y2="146"/>
+            <line x1="447" y1="138" x2="447" y2="146"/>
+            <line x1="553" y1="138" x2="553" y2="146"/>
+            <line x1="660" y1="138" x2="660" y2="146"/>
+            <line x1="767" y1="138" x2="767" y2="146"/>
+            <line x1="873" y1="138" x2="873" y2="146"/>
+            <line x1="980" y1="138" x2="980" y2="146"/>
+          </g>
+
+          <!-- month labels — centred between boundary marks -->
           <g font-size="10" fill="#5B6166" text-anchor="middle">
-            <g transform="translate(20, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 1</text>
-            </g>
-            <g transform="translate(127, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 2</text>
-            </g>
-            <g transform="translate(233, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 3</text>
-            </g>
-            <g transform="translate(340, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 4</text>
-            </g>
-            <g transform="translate(447, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 5</text>
-            </g>
-            <g transform="translate(553, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 6</text>
-            </g>
-            <g transform="translate(660, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 7</text>
-            </g>
-            <g transform="translate(767, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 8</text>
-            </g>
-            <g transform="translate(873, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="158">Month 9</text>
-            </g>
-            <g transform="translate(980, 0)">
-              <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-            </g>
+            <text x="73.5"  y="162">Month 1</text>
+            <text x="180"   y="162">Month 2</text>
+            <text x="286.5" y="162">Month 3</text>
+            <text x="393.5" y="162">Month 4</text>
+            <text x="500"   y="162">Month 5</text>
+            <text x="606.5" y="162">Month 6</text>
+            <text x="713.5" y="162">Month 7</text>
+            <text x="820"   y="162">Month 8</text>
+            <text x="926.5" y="162">Month 9</text>
           </g>
 
           <!-- Milestone markers -->
-          <!-- M1: Institutional Blueprint (wks 1-4) -->
+          <!-- M1: Blueprint (wks 1-4) -->
           <g>
             <rect x="20" y="64" width="106" height="46" rx="6" ry="6" fill="#FFFFFF" stroke="#0B1F4D"/>
             <text x="73" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D">M1 · Blueprint</text>
             <text x="73" y="98" text-anchor="middle" font-size="10" fill="#5B6166">4 weeks</text>
-            <circle cx="73" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="73" cy="142" r="5" fill="#0B1F4D"/>
           </g>
-          <!-- M2: Platform Spec (wks 5-8) -->
+          <!-- M2: Spec (wks 5-8) -->
           <g>
             <rect x="127" y="64" width="106" height="46" rx="6" ry="6" fill="#FFFFFF" stroke="#0B1F4D"/>
             <text x="180" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D">M2 · Spec</text>
             <text x="180" y="98" text-anchor="middle" font-size="10" fill="#5B6166">4 weeks</text>
-            <circle cx="180" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="180" cy="142" r="5" fill="#0B1F4D"/>
           </g>
           <!-- M3: Platform Development (wks 9-16) -->
           <g>
             <rect x="232" y="64" width="213" height="46" rx="6" ry="6" fill="#FFFFFF" stroke="#0B1F4D"/>
             <text x="339" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D">M3 · Platform Development</text>
             <text x="339" y="98" text-anchor="middle" font-size="10" fill="#5B6166">8 weeks · open source + audit</text>
-            <circle cx="339" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="339" cy="142" r="5" fill="#0B1F4D"/>
           </g>
-          <!-- M4: Institutional Readiness (wks 17-20) -->
+          <!-- M4: Readiness (wks 17-20) -->
           <g>
             <rect x="447" y="64" width="106" height="46" rx="6" ry="6" fill="#FFFFFF" stroke="#0B1F4D"/>
             <text x="500" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D">M4 · Readiness</text>
             <text x="500" y="98" text-anchor="middle" font-size="10" fill="#5B6166">4 weeks</text>
-            <circle cx="500" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="500" cy="142" r="5" fill="#0B1F4D"/>
           </g>
           <!-- M5: Pilot Run (wks 21-32) -->
           <g>
             <rect x="555" y="64" width="318" height="46" rx="6" ry="6" fill="#0B1F4D"/>
             <text x="714" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">M5 · Pilot Run</text>
             <text x="714" y="98" text-anchor="middle" font-size="10" fill="#E8EEF6">12 weeks · production with officials</text>
-            <circle cx="714" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="714" cy="142" r="5" fill="#0B1F4D"/>
           </g>
-          <!-- M6: Ecosystem Engagement (wks 33-36) -->
+          <!-- M6: Ecosystem (wks 33-36) -->
           <g>
             <rect x="875" y="64" width="105" height="46" rx="6" ry="6" fill="#FFFFFF" stroke="#0B1F4D"/>
             <text x="927" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#0B1F4D">M6 · Ecosystem</text>
             <text x="927" y="98" text-anchor="middle" font-size="10" fill="#5B6166">4 weeks</text>
-            <circle cx="927" cy="120" r="5" fill="#0B1F4D"/>
+            <circle cx="927" cy="142" r="5" fill="#0B1F4D"/>
           </g>
 
           <!-- Deliverables row -->
-          <g font-size="11" fill="#2C3033">
-            <text x="20" y="196" font-weight="600" fill="#0B1F4D">Outputs &amp; learnings shipped</text>
-          </g>
-          <g font-size="11.5" fill="#2C3033">
-            <text x="20" y="218">→  Institutional blueprint, reviewed by the Secretariat of Modernization of Entre Ríos</text>
-            <text x="20" y="238">→  Platform specification, reviewed by independent third-party assurance (Blink Labs, ELK Connect)</text>
-            <text x="20" y="258">→  Open-source platform (Apache 2.0 at TxPipe org), smart-contract audit completed</text>
-            <text x="20" y="278">→  Pilot deployed in production, on-chain state-transition records, measured per-deployment unit economics</text>
-            <text x="20" y="298">→  Case study (endorsed) + replication framework + 2 working-group sessions + 4 prospecting briefings + aggregated lessons-learned</text>
+          <text x="20" y="200" font-size="13" font-weight="600" fill="#0B1F4D">Outputs &amp; learnings shipped</text>
+          <g font-size="12.5" fill="#2C3033">
+            <text x="20" y="224">→  Institutional blueprint, reviewed by the Secretariat of Modernization of Entre Ríos</text>
+            <text x="20" y="246">→  Platform specification, reviewed by independent third-party assurance (Blink Labs, ELK Connect)</text>
+            <text x="20" y="268">→  Open-source platform (Apache 2.0 at TxPipe org), smart-contract audit completed</text>
+            <text x="20" y="290">→  Pilot deployed in production, on-chain state-transition records, measured per-deployment unit economics</text>
+            <text x="20" y="312">→  Case study (endorsed) + replication framework + 2 working-group sessions + 4 prospecting briefings + aggregated lessons-learned</text>
           </g>
         </g>
       </svg>
@@ -826,7 +804,7 @@
       <div class="ask-grid">
         <div>
           <div class="k">Funding · ADA/USD 0.25</div>
-          <div class="v">2,335,400 ADA <span style="font-size:13px;opacity:.7;font-weight:400">≈ $583,850</span><br><span style="font-size:13px;opacity:.7;font-weight:400">+ 583,850 ADA contingency ≈ $145,963</span></div>
+          <div class="v">2,335,400 ADA <span style="font-size:13px;opacity:.7;font-weight:400">≈ $583,850</span><br><span style="font-size:13px;opacity:.7;font-weight:400">+ 583,850 ADA contingency</span></div>
         </div>
         <div>
           <div class="k">Duration</div>
