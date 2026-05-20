@@ -108,7 +108,7 @@
   .hero-lede { max-width: 760px; }
   .hero-stats {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: 1.3fr 0.6fr 1.4fr 1.7fr;
     gap: 24px;
     margin-top: 56px;
     padding-top: 36px;
@@ -192,7 +192,7 @@
   }
   .mech h3 { margin-bottom: 10px; }
   .mech p { color: var(--ink-soft); margin: 0; font-size: 15px; line-height: 1.55; }
-  .mech .meta { margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
+  .mech .meta { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
 
   /* ===================== MARKET BLOCK ====================== */
   .market-list {
@@ -271,6 +271,9 @@
   .partner p { color: var(--ink-soft); font-size: 14.5px; line-height: 1.55; margin: 0; }
   .partner ul { margin: 12px 0 0; padding-left: 18px; font-size: 13.5px; color: var(--muted); }
   .partner ul li { margin-bottom: 4px; }
+  .partner-social { margin-top: 14px; display: flex; gap: 12px; }
+  .partner-social a { font-size: 13px; color: var(--muted); border: none; }
+  .partner-social a:hover { color: var(--accent); }
 
   /* ===================== FOOTER ============================ */
   footer { padding: 56px 0 80px; border-top: 1px solid var(--line); margin-top: 40px; }
@@ -297,8 +300,9 @@
       <a href="#what">What it is</a>
       <a href="#how">How it works</a>
       <a href="#cardano">For Cardano</a>
-      <a href="#market">Market</a>
+      <a href="#opportunity">Opportunity</a>
       <a href="#pilot">The pilot</a>
+      <a href="#team">The team</a>
       <a href="#ask">The ask</a>
     </div>
   </div>
@@ -314,15 +318,15 @@
     <p class="lede text-balance">GOV.EXE is an open-source platform that helps governments execute public projects with transparency and accountability — piloted with the Province of Entre Ríos, Argentina.</p>
 
     <div class="cta-row">
-      <a class="btn primary" href="#ask">Read the ask <span class="arrow">→</span></a>
+      <a class="btn primary" href="https://hydra-voting.intersectmbo.org/votes/cardano-budget-2026/69fd1b97e1ab5d003a0cab6f" target="_blank" rel="noopener">Read full proposal <span class="arrow">→</span></a>
       <a class="btn" href="https://github.com/txpipe/gov.exe" target="_blank" rel="noopener">Preliminary design (GitHub)</a>
       <a class="btn" href="https://drive.google.com/file/d/1o5u-TF-HKAr36Aq_VqQglDtcDMah2B3Y/view?usp=sharing" target="_blank" rel="noopener">Letter of intent</a>
     </div>
 
     <div class="hero-stats">
       <div class="stat">
-        <div class="k">Funding ask</div>
-        <div class="v">2,335,400 ADA<br><span class="small">+ 583,850 ADA contingency</span></div>
+        <div class="k">Funding ask · ADA/USD 0.25</div>
+        <div class="v">2,335,400 ADA <span class="small muted">≈ $583,850</span><br><span class="small">+ 583,850 ADA contingency <span style="opacity:.7">≈ $145,963</span></span></div>
       </div>
       <div class="stat">
         <div class="k">Duration</div>
@@ -334,7 +338,7 @@
       </div>
       <div class="stat">
         <div class="k">Institutional partner</div>
-        <div class="v">Secretariat of Modernization,<br>Province of Entre Ríos</div>
+        <div class="v">Secretariat of Modernization, Province of Entre Ríos, Argentina</div>
       </div>
     </div>
   </div>
@@ -347,12 +351,11 @@
   <div class="wrap twocol">
     <div>
       <span class="eyebrow">What it is</span>
-      <h2 class="text-balance">A single accountable workflow for executing public projects.</h2>
+      <h2 class="text-balance">GOV.EXE brings a public project's full lifecycle into one verifiable workflow.</h2>
     </div>
     <div class="col-body">
       <p>Officials executing public projects operate across disconnected systems for planning, procurement, and payment. No single authority sees a project's full lifecycle, producing delays, coordination failures, and accountability gaps.</p>
       <p>GOV.EXE sits above the government's existing systems and helps officials move public projects through the five stages where decisions are actually made — <strong>Mandate, Planning, Procurement, Payment, and Closure</strong> — with each authorized step recorded and enforced on Cardano.</p>
-      <p class="muted small">The problem is a recognized multilateral priority: the World Bank, OECD, and IDB run dedicated programs, publish benchmarks, and actively fund digital government in LATAM.</p>
     </div>
   </div>
 
@@ -548,19 +551,19 @@
   <div class="wrap">
     <div class="twocol">
       <div>
-        <span class="eyebrow">Why Cardano</span>
-        <h2 class="text-balance">Concrete outputs and engagements — bounded, beyond the pilot.</h2>
+        <span class="eyebrow">For Cardano</span>
+        <h2 class="text-balance">Three concrete mechanisms <strong>that</strong> create value beyond the pilot</h2>
       </div>
       <div class="col-body">
         <p>The pilot is one deployment in one province. What the Cardano ecosystem gets from it is structured to outlast it: a Secretariat-endorsed case study, an open-source framework with builder working groups, and a documented LATAM market signal from gf Consulting Group's institutional network.</p>
-        <p class="muted small">We commit to the work, not to adoption outcomes we can't control.</p>
+        <p class="muted small">The pilot tests whether this public-sector vertical can scale on Cardano through builder uptake, jurisdiction interest, and measurable ROI.</p>
       </div>
     </div>
 
     <div class="mech-grid">
       <div class="mech">
         <span class="num">1</span>
-        <h3>Case study</h3>
+        <h3>Case study — Institutionally endorsed</h3>
         <p>A real institutional deployment, endorsed by the Secretariat of Modernization of Entre Ríos. Cardano builders pursuing similar verticals use it as a credibility lever with their own institutional counterparts.</p>
         <div class="meta">Endorsed · published in the open-source repo</div>
       </div>
@@ -572,7 +575,7 @@
       </div>
       <div class="mech">
         <span class="num">3</span>
-        <h3>LATAM prospecting briefings</h3>
+        <h3>LATAM prospecting learnings</h3>
         <p>Four briefings to jurisdictions and multilateral institutions in gf's LATAM network. An aggregated lessons-learned document captures what LATAM jurisdictions are buying, what they consider blocking, and what they're hearing from peers.</p>
         <div class="meta">4 briefings · aggregated lessons published</div>
       </div>
@@ -583,10 +586,10 @@
 <!-- =========================================================
      MARKET
 ========================================================= -->
-<section class="section" id="market">
+<section class="section" id="opportunity">
   <div class="wrap twocol">
     <div>
-      <span class="eyebrow">Market</span>
+      <span class="eyebrow">Opportunity</span>
       <h2 class="text-balance">The category is named, measured, and funded at multilateral scale.</h2>
     </div>
     <div class="col-body">
@@ -646,7 +649,7 @@
   <!-- ================================================ -->
   <div class="wrap">
     <div class="diagram-card">
-      <svg viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline of six milestones across nine months">
+      <svg viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline of six milestones across nine months">
         <g font-family="Inter, sans-serif">
           <!-- WP bands -->
           <g>
@@ -667,39 +670,39 @@
           <g font-size="10" fill="#5B6166" text-anchor="middle">
             <g transform="translate(20, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M1</text>
+              <text x="0" y="158">Month 1</text>
             </g>
             <g transform="translate(127, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M2</text>
+              <text x="0" y="158">Month 2</text>
             </g>
             <g transform="translate(233, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M3</text>
+              <text x="0" y="158">Month 3</text>
             </g>
             <g transform="translate(340, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M4</text>
+              <text x="0" y="158">Month 4</text>
             </g>
             <g transform="translate(447, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M5</text>
+              <text x="0" y="158">Month 5</text>
             </g>
             <g transform="translate(553, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M6</text>
+              <text x="0" y="158">Month 6</text>
             </g>
             <g transform="translate(660, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M7</text>
+              <text x="0" y="158">Month 7</text>
             </g>
             <g transform="translate(767, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M8</text>
+              <text x="0" y="158">Month 8</text>
             </g>
             <g transform="translate(873, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
-              <text x="0" y="140">M9</text>
+              <text x="0" y="158">Month 9</text>
             </g>
             <g transform="translate(980, 0)">
               <line x1="0" y1="116" x2="0" y2="124" stroke="#C9C5B8"/>
@@ -752,18 +755,18 @@
 
           <!-- Deliverables row -->
           <g font-size="11" fill="#2C3033">
-            <text x="20" y="180" font-weight="600" fill="#0B1F4D">Outputs &amp; learnings shipped</text>
+            <text x="20" y="196" font-weight="600" fill="#0B1F4D">Outputs &amp; learnings shipped</text>
           </g>
           <g font-size="11.5" fill="#2C3033">
-            <text x="20" y="208">→  Institutional blueprint, reviewed by the Secretariat of Modernization of Entre Ríos</text>
-            <text x="20" y="228">→  Platform specification, reviewed by independent third-party assurance (Blink Labs, ELK Connect)</text>
-            <text x="20" y="248">→  Open-source platform (Apache 2.0 at TxPipe org), smart-contract audit completed</text>
-            <text x="20" y="268">→  Pilot deployed in production, on-chain state-transition records, measured per-deployment unit economics</text>
-            <text x="20" y="288">→  Case study (endorsed) + replication framework + 2 working-group sessions + 4 prospecting briefings + aggregated lessons-learned</text>
+            <text x="20" y="218">→  Institutional blueprint, reviewed by the Secretariat of Modernization of Entre Ríos</text>
+            <text x="20" y="238">→  Platform specification, reviewed by independent third-party assurance (Blink Labs, ELK Connect)</text>
+            <text x="20" y="258">→  Open-source platform (Apache 2.0 at TxPipe org), smart-contract audit completed</text>
+            <text x="20" y="278">→  Pilot deployed in production, on-chain state-transition records, measured per-deployment unit economics</text>
+            <text x="20" y="298">→  Case study (endorsed) + replication framework + 2 working-group sessions + 4 prospecting briefings + aggregated lessons-learned</text>
           </g>
         </g>
       </svg>
-      <p class="caption">Six milestones across 9 months. Each milestone has a published, verifiable definition-of-done; the pilot run (M5) is the longest single milestone — 12 weeks of production operation generating the case-study and replication-framework material delivered in M6.</p>
+      <p class="caption">Six milestones across 9 months. Each milestone has a published, verifiable definition-of-done; the pilot run (M5) is the longest single milestone — 12 weeks of production operation generating the case-study and learnings delivered in M6.</p>
     </div>
   </div>
 </section>
@@ -771,9 +774,9 @@
 <!-- =========================================================
      PARTNERS
 ========================================================= -->
-<section class="section" id="partners">
+<section class="section" id="team">
   <div class="wrap">
-    <span class="eyebrow">Parties</span>
+    <span class="eyebrow">The team</span>
     <h2 class="text-balance">Two firms, structured to deliver institutional architecture and Cardano-native engineering together.</h2>
 
     <div class="partners">
@@ -782,14 +785,14 @@
       <div class="partner">
         <div class="role">Cardano-native engineering</div>
         <div class="logo-slot">
-          <span class="logo-placeholder">TX</span>
+          <span class="logo-placeholder">TP</span>
           <h3>TxPipe</h3>
         </div>
-        <p>Cardano infrastructure and developer-tooling company. Shipped production-grade open-source projects in use across the ecosystem — Oura, Pallas, Dolos, Demeter, Tx3, Supernode. 30 Catalyst proposals (Funds 9–14) delivered or in flight on schedule. Maintainers of Pallas, Dolos, and UTxO RPC under Intersect's 2025 funding.</p>
+        <p>Cardano infrastructure and developer-tooling company. Shipped production-grade open-source projects in use across the ecosystem — Oura, Pallas, Dolos, Demeter, Tx3, Supernode. 30 Catalyst proposals (Funds 9–14) delivered or in flight on schedule. Maintainers of Pallas, Dolos, and UTxO RPC under Intersect's 2025 funding. 20+ years building software platforms for institutions, including MiBA (City of Buenos Aires).</p>
         <ul>
           <li>Santiago Carmuega, CEO</li>
-          <li>20+ years building software platforms for institutions, including MiBA (City of Buenos Aires)</li>
         </ul>
+        <div class="partner-social"><a href="https://x.com/txpipe_tools" target="_blank" rel="noopener">𝕏 @txpipe_tools</a></div>
       </div>
 
       <!-- ASSET SLOT: replace logo-placeholder with <img class="logo" src="LOGO_GF.svg" alt="gf Consulting Group"> -->
@@ -799,11 +802,11 @@
           <span class="logo-placeholder">GF</span>
           <h3>gf Consulting Group</h3>
         </div>
-        <p>Latin American advisory firm with 20+ years of experience and 200+ delivered projects across the region. Practice spans economic regulation, institutional reform, public-sector modernization, and investment structuring.</p>
+        <p>Latin American advisory firm with 20+ years of experience and 200+ delivered projects across the region. Practice spans economic regulation, institutional reform, public-sector modernization, and investment structuring. Client list: IDB, World Bank, CAF, Fonplata, UNDP, OEI, UNOPS, and national/subnational governments across LATAM.</p>
         <ul>
           <li>Gerónimo Frigerio, General Director</li>
-          <li>Client list: IDB, World Bank, CAF, Fonplata, UNDP, OEI, UNOPS, and national/subnational governments across LATAM</li>
         </ul>
+        <div class="partner-social"><a href="https://x.com/GeroFrigerio" target="_blank" rel="noopener">𝕏 @GeroFrigerio</a></div>
       </div>
     </div>
   </div>
@@ -815,15 +818,15 @@
 <section class="section" id="ask">
   <div class="wrap">
     <span class="eyebrow">The ask</span>
-    <h2 class="text-balance">2,335,400 ADA for a 9-month pilot — with budget caps, audit, and a contingency reserve.</h2>
+    <h2 class="text-balance">2,335,400 ADA for a 9-month pilot — with USD budget caps and a contingency reserve.</h2>
 
     <div class="ask-card">
       <p class="lede">Funding is sized in USD at a fixed ADA/USD rate of $0.25. The team commits to retaining no more than the USD-equivalent cost of the project; any ADA in excess at project closure is returned to the Cardano Treasury.</p>
 
       <div class="ask-grid">
         <div>
-          <div class="k">Funding</div>
-          <div class="v">2,335,400 ADA<br><span style="font-size:13px;opacity:.7;font-weight:400">+ 583,850 ADA contingency reserve</span></div>
+          <div class="k">Funding · ADA/USD 0.25</div>
+          <div class="v">2,335,400 ADA <span style="font-size:13px;opacity:.7;font-weight:400">≈ $583,850</span><br><span style="font-size:13px;opacity:.7;font-weight:400">+ 583,850 ADA contingency ≈ $145,963</span></div>
         </div>
         <div>
           <div class="k">Duration</div>
@@ -848,10 +851,9 @@
       </div>
 
       <div class="btn-row">
-        <a class="btn solid" href="https://drive.google.com/file/d/1o5u-TF-HKAr36Aq_VqQglDtcDMah2B3Y/view?usp=sharing" target="_blank" rel="noopener">View letter of intent →</a>
+        <a class="btn solid" href="https://hydra-voting.intersectmbo.org/votes/cardano-budget-2026/69fd1b97e1ab5d003a0cab6f" target="_blank" rel="noopener">Full proposal on Hydra-Voting →</a>
+        <a class="btn" href="https://drive.google.com/file/d/1o5u-TF-HKAr36Aq_VqQglDtcDMah2B3Y/view?usp=sharing" target="_blank" rel="noopener">View letter of intent</a>
         <a class="btn" href="https://github.com/txpipe/gov.exe" target="_blank" rel="noopener">Preliminary design (GitHub)</a>
-        <!-- Replace href below with the Hydra-Voting platform link to the full proposal once published -->
-        <a class="btn" href="#" target="_blank" rel="noopener">Full proposal on Hydra-Voting</a>
       </div>
     </div>
   </div>
